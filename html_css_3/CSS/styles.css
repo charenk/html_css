@@ -7,6 +7,8 @@
   --color-body: #918ca4;
 }
 
+/****************************************TYPOGRAPHY*******************************************/
+
 html {
   /* Bowsers default size is 16px - Chrome 
       So if we set 62.5% of 16px = 10px */
@@ -71,5 +73,75 @@ Let's write media queries for;
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/************* LINKS ***************/
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+/* Media query - For screens larger than 1024px width */
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
+
+/************* Badge ***************/
+
+/* Badge - Structure */
+
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 2rem;
+}
+
+/* Badge - Skin */
+.badge--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+/* Media query - For screens larger than 1024px width */
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
