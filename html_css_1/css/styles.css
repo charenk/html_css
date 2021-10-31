@@ -1,0 +1,42 @@
+body {
+  margin: 10px;
+}
+
+h1 {
+  color: burlywood;
+}
+
+a[target="_blank"] {
+  color: cadetblue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Relational selectors **/
+
+/**This can also be called as decendent selector*/
+#products > p {
+  color: red;
+}
+
+/**Pseudo-class selector**/
+article .first {
+  font-size: 140%;
+  font-style: italic;
+}
+
+ul li: :nth-child() {
+}
+
+.inher {
+  color: blue;
+  border: 1px solid black;
+}
+
+/*** To stop the inheritance */
+strong {
+  color: initial;
+  border: inherit;
+}
+
+/** Css tutorial 1 - completed ****/
