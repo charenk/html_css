@@ -53,3 +53,51 @@ p {
 }
 
 /*Positioning**/
+
+.boxes {
+  border: 3px solid black;
+  position: relative;
+}
+
+.box-basic {
+  width: 10rem;
+  height: 10rem;
+}
+
+.box-one {
+  background-color: gold;
+}
+
+.box-two {
+  background-color: tomato;
+  position: fixed;
+  left: 2rem;
+  right: 2rem;
+  top: 0;
+}
+
+.box-three {
+  background-color: green;
+}
+
+/** Folating - Tweet ***/
+.tweet {
+  border: 3px solid lightblue;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: grey;
+  border-radius: 100px;
+  float: left;
+  margin-right: 1rem;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/***** Flex box *******/
